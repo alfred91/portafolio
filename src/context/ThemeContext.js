@@ -1,4 +1,4 @@
-//USE ESTATE Y USE EFFECT
+// USE ESTATE Y USE EFFECT
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
@@ -8,10 +8,7 @@ const ThemeContext = createContext({
     toggleTheme: () => { }, // FUNCIÓN PARA CAMBIAR EL TEMA
 });
 
-// HOOK PARA USAR EL CONTEXTO
 export const useTheme = () => useContext(ThemeContext);
-
-// PROVEEDOR DEL CONTEXTO PARA ENVOLVER COMPONENTES
 export const ThemeProvider = ({ children }) => {
 
     // ESTADO DEL TEMA, AUTO DETECTA EL ESQUEMA DE COLOR DEL SISTEMA
