@@ -1,13 +1,150 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ESTILOS BASE PARA MODOS CLARO Y OSCURO */
+/* MODO CLARO */
+.light {
+  --bg-color: #e5e7eb;
+  --text-color: #000;
+  --primary-bg-color: linear-gradient(to right, #2baaa4, #c4b927);
+  --secondary-bg-color: linear-gradient(to right, #dd32f3, #ce90cb);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* MODO OSCURO */
+.dark {
+  --bg-color: #1f2937;
+  --text-color: #fff;
+  --primary-bg-color: linear-gradient(#6b2b72, #a5079d);
+  --secondary-bg-color: linear-gradient(to right, #2b7a6d, #dbc54b);
+  background-color: var(--bg-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+/* ESTILOS GLOBALES */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+/* ESTILOS PARA TEXTO CON GRADIENTE */
+span,
+.primary-color {
+  background-image: var(--primary-bg-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.secondary-color {
+  background-image: var(--secondary-bg-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* FONDO DE GRADIENTE */
+.bg-primary-color {
+  background-image: var(--primary-bg-color);
+}
+
+/* NAV LINKS CON EFECTO HOVER */
+.nav-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-image: var(--primary-bg-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transform: scale(1.2);
+  text-decoration: none;
+}
+
+/* ANIMACIONES Y TRANSICIONES */
+@keyframes rotate-and-scale {
+  from {
+    transform: rotate(0deg) scale(1.05);
+  }
+  to {
+    transform: rotate(360deg) scale(1.2);
+  }
+}
+
+.theme-icon {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.theme-icon:hover {
+  animation: rotate-and-scale 0.5s ease-in-out forwards;
+}
+
+/* TOOLTIPS */
+.tooltip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: var(--primary-bg-color);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 10;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.svg-container {
+  padding-top: 5rem;
+  padding-left: 20rem;
+}
+
+.send-plane {
+  width: 10rem;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.send-plane:hover {
+  animation: move-plane 2s ease-in-out forwards;
+}
+
+@keyframes move-plane {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10rem) translateY(-5rem) rotate(-8deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
