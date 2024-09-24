@@ -18,15 +18,15 @@ i18n
             escapeValue: false,
         },
         backend: {
-            loadPath: '/locales/{{lng}}/{{ns}}.json', // Carga las traducciones
+            loadPath: '/locales/{{lng}}/{{ns}}.json', // Cargar traducciones
         },
-        // Puedes agregar recursos directamente si no estás usando el backend
+
         resources: {
             es: {
-                translation: require('./locales/es/translation.json'), // Cargar español
+                translation: require('./locales/es/translation.json'), // español
             },
             en: {
-                translation: require('./locales/en/translation.json'), // Cargar inglés
+                translation: require('./locales/en/translation.json'), // inglés
             },
         },
     });
