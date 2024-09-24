@@ -32,7 +32,7 @@ const About = () => {
 
                         <div
                             className='bg-[#333333]/40 p-5 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out shadow-lg hover:shadow-xl'>
-                            <a href='http://www.github.com/alfred91' target='blank' className='text-white'>
+                            <a href='https://github.com/alfred91?tab=repositories' target='blank' className='text-white'>
                                 <h3 className='md:text-4xl text-2xl font-semibold'>7<span
                                     className='primary-text'>+</span></h3>
                                 <p><span className='md:text-base text-xs'>{t('projects00')}<br />{t('projects01')}</span>
