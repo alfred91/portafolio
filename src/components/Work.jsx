@@ -44,7 +44,7 @@ const Work = () => {
                         <img src={proj1} alt="Agenda Cultural Laravel"
                             className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
                     </a>
-                    <a href="http://44.193.185.234/inventario" target="blank"
+                    <a href="http://34.229.148.155:8080" target="blank"
                         className="group h-48 overflow-hidden rounded-lg shadow-lg md:h-80">
                         <img src={proj2} alt="Aplicacion para Gestión de Inventario - Laravel"
                             className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
