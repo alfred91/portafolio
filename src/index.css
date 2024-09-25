@@ -1,5 +1,7 @@
+/* Importación de fuentes */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap");
 
+/* Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -122,29 +124,64 @@ span,
   opacity: 1;
 }
 
-.svg-container {
-  padding-top: 5rem;
-  padding-left: 20rem;
-}
+/* SECCIÓN PARA ADAPTACIÓN MOVIL */
 
-.send-plane {
-  width: 10rem;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.send-plane:hover {
-  animation: move-plane 2s ease-in-out forwards;
-}
-
-@keyframes move-plane {
-  0% {
-    transform: translateX(0);
+/* Móvil (pantallas pequeñas) */
+@media (max-width: 768px) {
+  /* Reducción de padding y centrado del contenido */
+  .svg-container {
+    padding-top: 2rem;
+    padding-left: 1rem;
   }
-  50% {
-    transform: translateX(10rem) translateY(-5rem) rotate(-8deg);
+
+  /* Ajustar el tamaño del SVG para que se adapte a pantallas pequeñas */
+  .send-plane {
+    width: 6rem;
   }
-  100% {
-    transform: translateX(0);
+
+  /* Tamaño de fuente más pequeño para dispositivos móviles */
+  body {
+    font-size: 0.875rem;
+    padding: 1rem;
+  }
+
+  /* Nav links más compactos en móvil */
+  .nav-link {
+    padding: 0.4rem 0.8rem;
+  }
+
+  /* Evitar que el texto en hover se haga demasiado grande en móvil */
+  .nav-link:hover,
+  .nav-link:focus {
+    transform: scale(1.1);
+  }
+
+  /* Asegurarse de que los tooltips no desborden */
+  .tooltip-text {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    white-space: normal;
+    width: 8rem;
+  }
+}
+
+/* TABLET (pantallas medianas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .svg-container {
+    padding-top: 3rem;
+    padding-left: 5rem;
+  }
+
+  .send-plane {
+    width: 8rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem 1rem;
+  }
+
+  .tooltip-text {
+    font-size: 0.875rem;
+    padding: 0.75rem;
   }
 }
