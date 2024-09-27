@@ -12,13 +12,15 @@ import './i18n';
 function App() {
   return (
     <Router>
-      <div>
+      <div className="flex flex-col min-h-screen"> {/* Usamos flexbox para estructurar */}
         <Navbar />
-        <Hero />
-        <About />
-        <Work />
-        <Experience />
-        <Contact />
+        <main className="flex-grow"> {/* Se asegura de que el contenido crezca */}
+          <Hero />
+          <About />
+          <Work />
+          <Experience />
+          <Contact />
+        </main>
         <Footer />
       </div>
     </Router>
