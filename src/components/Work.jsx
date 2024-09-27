@@ -39,7 +39,7 @@ const Work = () => {
                             className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
                     </a>
 
-                    <a href="http://54.163.11.19" target="blank"
+                    <a href="http://54.84.138.15" target="blank"
                         className="group h-48 overflow-hidden rounded-lg md:col-span-2 shadow-lg md:h-80">
                         <img src={proj1} alt="Agenda Cultural Laravel"
                             className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
