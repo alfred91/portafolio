@@ -136,7 +136,7 @@ span,
 
   /* Ajustar el tamaño del SVG para que se adapte a pantallas pequeñas */
   .send-plane {
-    width: 6rem;
+    width: 4rem;
   }
 
   /* Tamaño de fuente más pequeño para dispositivos móviles */
@@ -173,7 +173,7 @@ span,
   }
 
   .send-plane {
-    width: 8rem;
+    width: 4rem;
   }
 
   .nav-link {
