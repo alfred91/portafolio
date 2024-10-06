@@ -29,8 +29,8 @@ const Work = () => {
                 </div>
 
                 <div className='grid gap-4 grid-cols-2 my-10 sm:grid-cols-3 md:gap-6 xl:gap-8'>
-                    <a href="http://3.211.131.204:8080/" target="blank" className="group h-48 overflow-hidden rounded-lg shadow-lg md:h-80">
-                        <img src={proj3} alt="Pokédex con NodeJS y Express desplegado en AWS"
+                    <a href="https://alfred91.github.io/pelis-app/" target="blank" className="group h-48 overflow-hidden rounded-lg shadow-lg md:h-80">
+                        <img src={proj3} alt="Aplicacion REACT con llamadas a API TheMovieDataBase"
                             className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
                     </a>
 
