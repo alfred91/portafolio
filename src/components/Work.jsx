@@ -34,7 +34,7 @@ const Work = () => {
                             className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
                     </a>
 
-                    <a href="https://alfredo-daw.000webhostapp.com/" target="blank" className="group h-48 overflow-hidden rounded-lg shadow-lg md:col-span-2 md:h-80">
+                    <a href="https://alfred91.github.io/PaginaBS" target="blank" className="group h-48 overflow-hidden rounded-lg shadow-lg md:col-span-2 md:h-80">
                         <img src={proj4} alt=""
                             className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
                     </a>
