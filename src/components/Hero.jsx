@@ -52,9 +52,9 @@ const Hero = () => {
                            group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 ${theme === 'light'
                                 ? 'bg-gradient-to-r from-blue-400 via-green-500 to-yellow-400'
                                 : 'bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E]'}`}></div>
-                        <a href={`${import.meta.env.BASE_URL}cv.pdf`} title='Download CV' role='button'
+                        <a href='mailto:alfred.91.mc@gmail.com?subject=Contacto%20desde%20portafolio' title={t('contactButton')} role='button'
                             className='w-[190px] h-[60px] relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-primary-color font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900'>
-                            {t('downloadButton')}
+                            {t('contactButton')}
                         </a>
                     </div>
                 </div>
